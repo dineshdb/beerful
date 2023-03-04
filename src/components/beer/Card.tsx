@@ -9,7 +9,7 @@ interface Props {
 }
 
 export default function Card({ beer }: Props) {
-  const ingredients = Object.keys(beer.ingredients ?? {}).join(", ");
+  const ingredients = 'Ingredients: ' + Object.keys(beer.ingredients ?? {}).join(", ");
   return (
     <>
       <div className="xl:w-1/3 lg:w-1/2 h-full w-full bg-white flex flex-row flex-wrap p-3 py-4">
